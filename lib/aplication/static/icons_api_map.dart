@@ -1,0 +1,21 @@
+// ignore: non_constant_identifier_names
+Map<String, String> ICONSAPI = {
+  "01d": "assets/icon_api/01d@2x.png",
+  "01n": "assets/icon_api/01n@2x.png",
+  "02d": "assets/icon_api/02d@2x.png",
+  "02n": "assets/icon_api/02n@2x.png",
+  "03d": "assets/icon_api/03d@2x.png",
+  "03n": "assets/icon_api/03d@2x.png",
+  "04d": "assets/icon_api/04d@2x.png",
+  "04n": "assets/icon_api/04d@2x.png",
+  "09d": "assets/icon_api/09d@2x.png",
+  "09n": "assets/icon_api/09d@2x.png",
+  "10d": "assets/icon_api/10d@2x.png",
+  "10n": "assets/icon_api/10n@2x.png",
+  "11d": "assets/icon_api/11d@2x.png",
+  "11n": "assets/icon_api/11d@2x.png",
+  "13d": "assets/icon_api/13d@2x.png",
+  "13n": "assets/icon_api/13d@2x.png",
+  "50d": "assets/icon_api/50d@2x.png",
+  "50n": "assets/icon_api/50d@2x.png",
+};
