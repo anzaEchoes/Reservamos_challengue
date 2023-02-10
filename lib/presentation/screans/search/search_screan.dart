@@ -90,10 +90,12 @@ class _SearchScreanState extends State<SearchScrean> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.transparent,
-          actions: [],
-        ),
+            elevation: 0,
+            backgroundColor: Colors.transparent,
+            title: const TittleWidget(
+              color: Colors.blue,
+              texto: "Search your country, state or place",
+            )),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
@@ -150,12 +152,19 @@ class _SearchScreanState extends State<SearchScrean> {
     return TextField(
       controller: controlador,
       decoration: InputDecoration(
-        hintText: 'Enter a city name',
-        suffixIcon: IconButton(
-          onPressed: _searchByCity,
-          icon: const Icon(Icons.send),
-        ),
-      ),
+          contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          suffixIcon: IconButton(
+            onPressed: _searchByCity,
+            icon: const Icon(Icons.send),
+          ),
+          hintText: "Enter Your City",
+          border: OutlineInputBorder(
+              borderSide:
+                  const BorderSide(color: Colors.blueAccent, width: 32.0),
+              borderRadius: BorderRadius.circular(25.0)),
+          focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(color: Colors.white, width: 32.0),
+              borderRadius: BorderRadius.circular(25.0))),
     );
   }
 }

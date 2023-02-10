@@ -82,7 +82,13 @@ class DetailSearchingCity extends StatelessWidget {
       SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Stack(
-          children: [_headInfo(codeImage: w.icon!), _centerInfo()],
+          children: [
+            _headInfo(codeImage: w.icon!),
+            _centerInfo(
+                viento: daily.windSpeed!.toInt(),
+                humedad: daily.humidity!.toInt(),
+                temp: daily.temp!.day!.toInt())
+          ],
         ),
       ),
     ]));
